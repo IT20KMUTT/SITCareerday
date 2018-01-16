@@ -337,14 +337,140 @@
           <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#photos" role="tab">ดูใบสมัครงาน</a></li>
         </ul>
       </div>
-
+     
       <div class="tab-content br-profile-body">
         <div class="tab-pane fade active show" id="posts">
+        <h4>โปรไฟล์ของคุณเสร็จสมบูรณ์ 100% </h4><br>
+        <div class="progress mg-b-20">
+            <div class="progress-bar progress-bar-stroped bg-success wd-100p"
+            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+        </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="card bd-0 shadow-base pd-25 pd-xs-40 mg-t-20">
                         <div class="card-header bg-transparent pd-0 bd-b-0">
-                            <h5 class="tx-14 tx-uppercase tx-spacing-1 tx-semibold tx-inverse">โปรไฟล์ของฉัน</h5>
+                            <h3 class="tx-20 tx-uppercase tx-spacing-1 tx-semibold tx-inverse">โปรไฟล์ของฉัน</h5>
+                            <p class="tx-14 mg-b-20 mg-xs-b-30">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum natus fuga reprehenderit unde odio. Inventore quia commodi quam repudiandae, culpa expedita ut, eligendi nulla maiores aperiam corrupti? Nostrum, ipsum.</p>
+                        </div><!-- card-header -->
+                        <div class="card-block pd-0">
+                            <div class="pd-x-10 pd-t-10 pd-b-5">
+                                <div class="row">
+                                    <div class="col-6 col-sm-6 col-md-6">
+                                        <h3 class="tx-16">ชื่อ-นามสกุล ภาษาอังกฤษ</h3>
+                                        <span>Songrit Keardphol</span>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6">
+                                        <h3 class="tx-16">ชื่อ-นามสกุล ภาษาไทย</h3>
+                                        <span>ทรงฤทธิ์ เกิดผล</span>
+                                    </div>
+                                </div>
+                            </div><!-- bd -->
+                            <a href="" class="btn btn-info tx-11 tx-spacing-1 tx-uppercase tx-medium tx-mont pd-y-12 pd-x-30 mg-t-30">Buttons</a>
+                        </div><!-- card-block -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card bd-0 shadow-base pd-25 pd-xs-40 mg-t-20">
+                        <div class="card-header bg-transparent pd-0 bd-b-0">
+                            <h5 class="tx-14 tx-uppercase tx-spacing-1 tx-semibold tx-inverse">ข้อมูลติดต่อเพิ่มเติม</h5>
+                            <p class="tx-14 mg-b-20 mg-xs-b-30">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum natus fuga reprehenderit unde odio. Inventore quia commodi quam repudiandae, culpa expedita ut, eligendi nulla maiores aperiam corrupti? Nostrum, ipsum.</p>
+                        </div><!-- card-header -->
+                        <div class="card-block pd-0">
+                            <div class="pd-x-10 pd-t-10 pd-b-5">
+                            
+                            </div><!-- bd -->
+                            <a href="" class="btn btn-info tx-11 tx-spacing-1 tx-uppercase tx-medium tx-mont pd-y-12 pd-x-30 mg-t-30">Buttons</a>
+                        </div><!-- card-block -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card bd-0 shadow-base pd-25 pd-xs-40 mg-t-20">
+                        <div class="card-header bg-transparent pd-0 bd-b-0">
+                            <h5 class="tx-14 tx-uppercase tx-spacing-1 tx-semibold tx-inverse">ประวัติการศึกษา</h5>
+                            <p class="tx-14 mg-b-20 mg-xs-b-30">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum natus fuga reprehenderit unde odio. Inventore quia commodi quam repudiandae, culpa expedita ut, eligendi nulla maiores aperiam corrupti? Nostrum, ipsum.</p>
+                        </div><!-- card-header -->
+                        <div class="card-block pd-0">
+                            <div class="pd-x-10 pd-t-10 pd-b-5">
+                            
+                            </div><!-- bd -->
+                            <a href="" class="btn btn-info tx-11 tx-spacing-1 tx-uppercase tx-medium tx-mont pd-y-12 pd-x-30 mg-t-30">Buttons</a>
+                        </div><!-- card-block -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card bd-0 shadow-base pd-25 pd-xs-40 mg-t-20">
+                        <div class="card-header bg-transparent pd-0 bd-b-0">
+                            <h5 class="tx-14 tx-uppercase tx-spacing-1 tx-semibold tx-inverse">สายอาชีพที่ชอบ 3 อันดับ</h5>
+                            <p class="tx-14 mg-b-20 mg-xs-b-30">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum natus fuga reprehenderit unde odio. Inventore quia commodi quam repudiandae, culpa expedita ut, eligendi nulla maiores aperiam corrupti? Nostrum, ipsum.</p>
+                        </div><!-- card-header -->
+                        <div class="card-block pd-0">
+                            <div class="pd-x-10 pd-t-10 pd-b-5">
+                            
+                            </div><!-- bd -->
+                            <a href="" class="btn btn-info tx-11 tx-spacing-1 tx-uppercase tx-medium tx-mont pd-y-12 pd-x-30 mg-t-30">Buttons</a>
+                        </div><!-- card-block -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card bd-0 shadow-base pd-25 pd-xs-40 mg-t-20">
+                        <div class="card-header bg-transparent pd-0 bd-b-0">
+                            <h5 class="tx-14 tx-uppercase tx-spacing-1 tx-semibold tx-inverse">ประสบการณ์ทำงาน</h5>
+                            <p class="tx-14 mg-b-20 mg-xs-b-30">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum natus fuga reprehenderit unde odio. Inventore quia commodi quam repudiandae, culpa expedita ut, eligendi nulla maiores aperiam corrupti? Nostrum, ipsum.</p>
+                        </div><!-- card-header -->
+                        <div class="card-block pd-0">
+                            <div class="pd-x-10 pd-t-10 pd-b-5">
+                            
+                            </div><!-- bd -->
+                            <a href="" class="btn btn-info tx-11 tx-spacing-1 tx-uppercase tx-medium tx-mont pd-y-12 pd-x-30 mg-t-30">Buttons</a>
+                        </div><!-- card-block -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card bd-0 shadow-base pd-25 pd-xs-40 mg-t-20">
+                        <div class="card-header bg-transparent pd-0 bd-b-0">
+                            <h5 class="tx-14 tx-uppercase tx-spacing-1 tx-semibold tx-inverse">ทักษะและจุดแข็งของคุณ</h5>
+                            <p class="tx-14 mg-b-20 mg-xs-b-30">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum natus fuga reprehenderit unde odio. Inventore quia commodi quam repudiandae, culpa expedita ut, eligendi nulla maiores aperiam corrupti? Nostrum, ipsum.</p>
+                        </div><!-- card-header -->
+                        <div class="card-block pd-0">
+                            <div class="pd-x-10 pd-t-10 pd-b-5">
+                            
+                            </div><!-- bd -->
+                            <a href="" class="btn btn-info tx-11 tx-spacing-1 tx-uppercase tx-medium tx-mont pd-y-12 pd-x-30 mg-t-30">Buttons</a>
+                        </div><!-- card-block -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card bd-0 shadow-base pd-25 pd-xs-40 mg-t-20">
+                        <div class="card-header bg-transparent pd-0 bd-b-0">
+                            <h5 class="tx-14 tx-uppercase tx-spacing-1 tx-semibold tx-inverse">CV/Resume และเอกสารอื่นๆ</h5>
+                            <p class="tx-14 mg-b-20 mg-xs-b-30">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum natus fuga reprehenderit unde odio. Inventore quia commodi quam repudiandae, culpa expedita ut, eligendi nulla maiores aperiam corrupti? Nostrum, ipsum.</p>
+                        </div><!-- card-header -->
+                        <div class="card-block pd-0">
+                            <div class="pd-x-10 pd-t-10 pd-b-5">
+                            
+                            </div><!-- bd -->
+                            <a href="" class="btn btn-info tx-11 tx-spacing-1 tx-uppercase tx-medium tx-mont pd-y-12 pd-x-30 mg-t-30">Buttons</a>
+                        </div><!-- card-block -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card bd-0 shadow-base pd-25 pd-xs-40 mg-t-20">
+                        <div class="card-header bg-transparent pd-0 bd-b-0">
+                            <h5 class="tx-14 tx-uppercase tx-spacing-1 tx-semibold tx-inverse">ประวัติการอบรม</h5>
                             <p class="tx-14 mg-b-20 mg-xs-b-30">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum natus fuga reprehenderit unde odio. Inventore quia commodi quam repudiandae, culpa expedita ut, eligendi nulla maiores aperiam corrupti? Nostrum, ipsum.</p>
                         </div><!-- card-header -->
                         <div class="card-block pd-0">
