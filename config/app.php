@@ -177,6 +177,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //Adding more
+        SafeStudio\Firebase\FirebaseServiceProvider::class,
+        Nahid\JsonQ\JsonqServiceProvider::class,
+
     ],
 
     /*
@@ -225,6 +229,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        //Adding more
+        'Firebase' => SafeStudio\Firebase\Facades\FirebaseFacades::class,
+        'Jsonq' => Nahid\JsonQ\Facades\Jsonq::class,
 
     ],
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "96098e473b028cdb2529580554a1ae3e",
+    "content-hash": "1486591d6c07d6cdf450615fe3629998",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -237,6 +237,48 @@
                 }
             ],
             "time": "2015-04-20T18:58:01+00:00"
+        },
+        {
+            "name": "ktamas77/firebase-php",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ktamas77/firebase-php.git",
+                "reference": "915fcac8a3e4e1ba457ab0cd0801255ce41445c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ktamas77/firebase-php/zipball/915fcac8a3e4e1ba457ab0cd0801255ce41445c5",
+                "reference": "915fcac8a3e4e1ba457ab0cd0801255ce41445c5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tamas Kalman",
+                    "email": "ktamas77@gmail.com"
+                }
+            ],
+            "description": "Firebase PHP Client",
+            "homepage": "https://github.com/ktamas77/firebase-php",
+            "keywords": [
+                "firebase",
+                "rest",
+                "wrapper"
+            ],
+            "time": "2016-06-14T20:11:14+00:00"
         },
         {
             "name": "laravel/framework",
@@ -636,6 +678,52 @@
             "time": "2017-01-23T04:29:33+00:00"
         },
         {
+            "name": "nahid/jsonq",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nahid/jsonq.git",
+                "reference": "3460dbc7b9342ee87b11d68bf74a10fb90d3e4b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nahid/jsonq/zipball/3460dbc7b9342ee87b11d68bf74a10fb90d3e4b7",
+                "reference": "3460dbc7b9342ee87b11d68bf74a10fb90d3e4b7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "graham-campbell/testbench": "^3.1",
+                "phpunit/phpunit": "^4.8 || ^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nahid\\JsonQ\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Creative Commons"
+            ],
+            "authors": [
+                {
+                    "name": "Nahid Bin Azhar",
+                    "email": "nahid.dns@gmail.com"
+                }
+            ],
+            "description": "JsonQ is a PHP based json data query library",
+            "homepage": "https://github.com/nahid/jsonq",
+            "keywords": [
+                "json",
+                "jsonq",
+                "query"
+            ],
+            "time": "2017-07-20T07:14:32+00:00"
+        },
+        {
             "name": "nesbot/carbon",
             "version": "1.22.1",
             "source": {
@@ -987,6 +1075,57 @@
                 "uuid"
             ],
             "time": "2018-01-13T22:22:03+00:00"
+        },
+        {
+            "name": "safestudio/firebase-laravel",
+            "version": "1.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SafeStudio/firebase-laravel.git",
+                "reference": "6210c3d9bdf732068a4341486f0577396afd4421"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SafeStudio/firebase-laravel/zipball/6210c3d9bdf732068a4341486f0577396afd4421",
+                "reference": "6210c3d9bdf732068a4341486f0577396afd4421",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.4",
+                "ktamas77/firebase-php": "^2.2",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.4",
+                "phpunit/phpunit": "^6.3",
+                "vlucas/phpdotenv": "2.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SafeStudio\\Firebase\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Le Minh Tri",
+                    "email": "ansidev@gmail.com"
+                }
+            ],
+            "description": "Firebase REST API easy wrapper for Laravel",
+            "keywords": [
+                "api",
+                "firebase",
+                "framework",
+                "laravel",
+                "rest",
+                "wrapper"
+            ],
+            "time": "2017-08-22T22:00:48+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

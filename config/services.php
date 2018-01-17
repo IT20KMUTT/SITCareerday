@@ -35,4 +35,10 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    //Adding more
+    'firebase' => [
+    'database_url' => env('FB_DATABASE', 'https://project-id.firebaseio.com/'),
+    'secret' => env('FB_DATABASE_KEY', 'dbsecretkey'),
+    ],
+
 ];
