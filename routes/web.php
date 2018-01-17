@@ -83,3 +83,7 @@ Route::get('/testfirebase5', function () {
   return $decode_result;
 
 });
+
+Route::get('/profile', function(){
+    return view('profile');
+});
