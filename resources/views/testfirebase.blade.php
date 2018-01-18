@@ -83,11 +83,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
   <script type="text/javascript">
-
   $(document).ready(function(){
-
     var rootRef = firebase.database().ref().child("Users/profile/-L3-2p16SyISl9V31c8b");
-
     rootRef.on('value', function(snapshot) {
       $('#prefix').val(snapshot.val().prefix);
       $('#name').val(snapshot.val().name) ;
@@ -96,7 +93,6 @@
       $('#religion').val(snapshot.val().religion) ;
     });
   });
-
   $( "#updateProfile" ).click(function() {
     // alert($('#name').val());
     var postData = {
@@ -106,21 +102,14 @@
       age: $('#age').val(),
       religion: $('#religion').val()
     };
-
     var updates = {};
     updates['Users/profile/-L3-2p16SyISl9V31c8b'] = postData;
-
     return firebase.database().ref().update(updates);
-
   });
-
   $('.fc-datepicker').datepicker({
     showOtherMonths: true,
     selectOtherMonths: true
   });
-
-
-
   </script>
 </body>
 </html>
