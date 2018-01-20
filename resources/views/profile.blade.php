@@ -5,18 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Twitter -->
-  <meta name="twitter:site" content="@themepixels">
-  <meta name="twitter:creator" content="@themepixels">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Bracket Plus">
-  <meta name="twitter:description" content="Premium Quality and Responsive UI for Dashboard.">
-  <meta name="twitter:image" content="http://themepixels.me/bracketplus/img/bracketplus-social.png">
-
   <!-- Facebook -->
   <meta property="og:url" content="http://themepixels.me/bracketplus">
-  <meta property="og:title" content="Bracket Plus">
-  <meta property="og:description" content="Premium Quality and Responsive UI for Dashboard.">
+  <meta property="og:title" content="SIT Career day System">
+  <meta property="og:description" content="lorem...">
 
   <meta property="og:image" content="http://themepixels.me/bracketplus/img/bracketplus-social.png">
   <meta property="og:image:secure_url" content="http://themepixels.me/bracketplus/img/bracketplus-social.png">
@@ -35,7 +27,8 @@
   <link href="../lib/Ionicons/css/ionicons.css" rel="stylesheet">
   <link href="../lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
   <link href="../lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet">
-
+  <link href="../lib/jquery.Thailand.js/dist/jquery.Thailand.min.css" rel="stylesheet">
+  
   <!-- Bracket CSS -->
   <link rel="stylesheet" href="../css/bracket.css">
 
@@ -518,7 +511,10 @@
               </div><!-- card-header -->
               <div class="card-block pd-0">
                 <div class="pd-x-10 pd-t-10 pd-b-5">
-
+                  <input type="text" id="district">
+                  <input type="text" id="amphoe">
+                  <input type="text" id="province">
+                  <input type="text" id="zipcode">
                 </div><!-- bd -->
                 <a href="" class="btn btn-info tx-11 tx-spacing-1 tx-uppercase tx-medium tx-mont pd-y-12 pd-x-30 mg-t-30">Buttons</a>
               </div><!-- card-block -->
@@ -726,9 +722,20 @@
   <script src="../lib/jquery-switchbutton/jquery.switchButton.js"></script>
   <script src="../lib/peity/jquery.peity.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.4.0/sweetalert2.all.js"></script>
+  
+  <script type="text/javascript" src="../lib/jquery.Thailand.js/dependencies/JQL.min.js"></script>
+  <script type="text/javascript" src="../lib/jquery.Thailand.js/dependencies/typeahead.bundle.js"></script>  
 
   <script src="../js/bracket.js"></script>
+  <script type="text/javascript" src="../lib/jquery.Thailand.js/dist/jquery.Thailand.min.js"></script>
   <script>
+  $.Thailand({
+    $district: $('#district'), // input ของตำบล
+    $amphoe: $('#amphoe'), // input ของอำเภอ
+    $province: $('#province'), // input ของจังหวัด
+    $zipcode: $('#zipcode'), // input ของรหัสไปรษณีย์
+  });
+
   $(function(){
     'use strict'
 
@@ -839,12 +846,6 @@
 
   });
 
-  $('.fc-datepicker').datepicker({
-    showOtherMonths: true,
-    selectOtherMonths: true,
-    dateFormat: "dd-mm-yy",
-    changeYear: true
-  });
 
 
   </script>
