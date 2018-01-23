@@ -443,7 +443,7 @@
                         <option value="นางสาว">นางสาว</option>
                         <option value="นาง">นาง</option>
                       </select>
-                      </div>
+                    </div>
                   </div><!-- col-2 -->
                   <div class="col-lg-5">
                     <div class="form-group">
@@ -596,11 +596,130 @@
                 </div><!-- form-layout-footer -->
               </div>
 
-
             </div>
           </div>
         </div>
+        <br> 
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-10">
+                    <span class="card-text" style="color: #adb5bd"><h5>ประวัติการศึกษา</h5></span>
+                  </div>
+                  <div id="btnUpdateProfile" class="col-md-2" align="right" style="display: compact;">
+                    <a href="#" class="btn btn-primary btn-icon">
+                      <div><i class="fa fa-pencil"></i></div>
+                    </a>
+                  </div>
+                </div>
+              </div> 
 
+              <div id="addressPresent" class="form-layout form-layout-1" style="display: compact;">
+                <div class="row mg-b-25">
+                  <h6>ระดับปริญญาตรี</h6>
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="form-control-label">คณะ <span class="tx-danger">*</span></label>
+                          <input id="faculty" class="form-control" type="text" value="ดึงจาก LDAP" placeholder="คณะ">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="form-control-label">ภาควิชา / หลักสูตร <span class="tx-danger">*</span></label>
+                          <input id="department" class="form-control" type="text" value="ดึงจาก LDAP" placeholder="คณะ">
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                          <div class="form-group mg-b-10-force">
+                            <label class="form-control-label">ปีเข้าการศึกษา: <span class="tx-danger">*</span></label>
+                            <select id="prefixUPD" class="form-control select2 select2-hidden-accessible" data-placeholder="เลือกคำนำหน้าชื่อ" tabindex="-1" aria-hidden="true">
+                              <option label="เริ่มต้น"></option>
+                              <option value="2017">2017</option>
+                              <option value="2016">2016</option>
+                              <option value="2015">2015</option>
+                              <option value="2014">2014</option>
+                              <option value="2013">2013</option>
+                              <option value="2012">2012</option>
+                              <option value="2011">2011</option>
+                              <option value="2010">2010</option>
+                            </select>
+                          </div>
+                          <div class="form-group mg-b-10-force">
+                            <label class="form-control-label">ปีเสร็จสิ้นการศึกษา: <span class="tx-danger">*</span></label>
+                            <select id="prefixUPD" class="form-control select2 select2-hidden-accessible" data-placeholder="เลือกคำนำหน้าชื่อ" tabindex="-1" aria-hidden="true">
+                              <option label="เสร็จสิ้น"></option>
+                              <option value="2020">2020</option>
+                              <option value="2019">2019</option>
+                              <option value="2018">2018</option>
+                              <option value="2017">2017</option>
+                              <option value="2016">2016</option>
+                              <option value="2015">2015</option>
+                              <option value="2014">2014</option>
+                              <option value="2013">2013</option>
+                            </select>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="form-control-label">เกรดเฉลี่ย <span class="tx-danger">*</span></label>
+                          <input id="grade" class="form-control" type="text" value="ดึงจาก LDAP" placeholder="เกรดเฉลี่ย">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- row -->
+              </div>
+
+              <div id="profileUpdate" class="form-layout form-layout-1" style="display: none;">
+                <div class="row mg-b-25">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label class="form-control-label">ที่อยู่: <span class="tx-danger">*</span></label>
+                      <input id="addressUPD" class="form-control" type="text" value="" placeholder="กรอกที่อยู่">
+                    </div>
+                  </div><!-- col-12 -->
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label class="form-control-label">ตำบล: <span class="tx-danger">*</span></label>
+                      <input id="districtUPD" class="form-control" type="text" value="" placeholder="กรอกตำบล">
+                    </div>
+                  </div><!-- col-3 -->
+                  
+                  <div class="col-lg-3">
+                    <div class="form-group mg-b-10-force">
+                      <label class="form-control-label">อำเภอ / เขต: <span class="tx-danger">*</span></label>
+                      <input id="amphoeUPD" class="form-control" type="text" value="" placeholder="กรอกอำเภอหรือเขต">
+                    </div>
+                  </div><!-- col-3 -->
+
+                  <div class="col-lg-3">
+                    <div class="form-group mg-b-10-force">
+                      <label class="form-control-label">จังหวัด: <span class="tx-danger">*</span></label>
+                      <input id="provinceUPD" class="form-control" type="text" value="" placeholder="กรอกจังหวัด">
+                    </div>
+                  </div><!-- col-3 -->
+
+                  <div class="col-lg-3">
+                    <div class="form-group mg-b-10-force">
+                      <label class="form-control-label">รหัสไปรษณีย์: <span class="tx-danger">*</span></label>
+                      <input id="zipcodeUPD" class="form-control" type="text" value="" placeholder="กรอกรหัสไปรษณีย์">
+                    </div>
+                  </div><!-- col-3 -->
+                </div><!-- row -->
+
+                <div class="form-layout-footer">
+                  <button id="updateAddress" class="btn btn-info" >บันทึกการเปลี่ยนแปลง</button>
+                  <button id="cancelUpdateAddress" class="btn btn-secondary">ยกเลิก</button>
+                </div><!-- form-layout-footer -->
+              </div>
+              
+            </div>
+          </div>
+        </div>
 
         <div class="row">
           <div class="col-md-12">
