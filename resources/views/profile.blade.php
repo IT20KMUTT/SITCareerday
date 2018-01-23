@@ -274,12 +274,14 @@
         <div class="dropdown">
           <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
             <span class="logged-name hidden-md-down">Songrit Keardphol</span>
-            <img src="http://apollo.kmutt.ac.th/kmuttstdpic/default.aspx?&stdcode=57130500028" class="wd-32 rounded-circle" alt="">
+              <img src="http://apollo.kmutt.ac.th/kmuttstdpic/default.aspx?&stdcode=57130500028" class="wd-32 rounded-circle" alt="">
             <span class="square-10 bg-success"></span>
           </a>
           <div class="dropdown-menu dropdown-menu-header wd-250">
-            <div class="tx-center">
-              <a href=""><img src="http://apollo.kmutt.ac.th/kmuttstdpic/default.aspx?&stdcode=57130500028" class="wd-80 rounded-circle" alt=""></a>
+            <div class="tx-center" style="width:200px;height:200px;overflow:hidden">
+              <a href="">
+                <img src="http://apollo.kmutt.ac.th/kmuttstdpic/default.aspx?&stdcode=57130500028" class="wd-80 rounded-circle" alt="">
+              </a>
               <h6 class="logged-fullname">Songrit Keardphol</h6>
               <p>youremail@domain.com</p>
             </div>
@@ -370,129 +372,228 @@
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> 
 
-              <div id="profilePresent" class="row bd-0 pd-25 pd-xs-40 mg-t-20" style="display: compact;">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                  <div class="form-layout">
-                    <div class="row">
-                      <label class="col-sm-4 form-control-label" align="left">คำนำหน้าชื่อ: <span class="tx-danger">*</span></label>
-                      <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                        <select id="prefix" class="form-control select2" data-placeholder="Choose Browser" disabled>
-                          <option value="นาย">นาย</option>
-                          <option value="นางสาว">นางสาว</option>
-                          <option value="นาง">นาง</option>
-                        </select>
+              <div id="profilePresent" class="form-layout form-layout-1" style="display: compact;">
+                <div class="row mg-b-25">
+                  <div class="col-lg-2">
+                    <div class="form-group mg-b-10-force">
+                      <label class="form-control-label">คำนำหน้าชื่อ: <span class="tx-danger">*</span></label>
+                      <select id="prefix" class="form-control select2 select2-hidden-accessible" data-placeholder="เลือกคำนำหน้าชื่อ" tabindex="-1" aria-hidden="true" readonly>
+                        <option label="เลือกคำนำหน้าชื่อ"></option>
+                        <option value="นาย">นาย</option>
+                        <option value="นางสาว">นางสาว</option>
+                        <option value="นาง">นาง</option>
+                      </select>
                       </div>
-                    </div><!-- row -->
-                    <div class="row mg-t-20">
-                      <label class="col-sm-4 form-control-label" align="left">ชื่อ: <span class="tx-danger">*</span></label>
-                      <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                        <input id="name" type="text" class="form-control" placeholder="Enter firstname" disabled>
-                      </div>
+                  </div><!-- col-2 -->
+                  <div class="col-lg-5">
+                    <div class="form-group">
+                      <label class="form-control-label">ชื่อจริง: <span class="tx-danger">*</span></label>
+                      <input id="name" class="form-control" type="text" value="" placeholder="Enter firstname" readonly>
                     </div>
-                    <div class="row mg-t-20">
-                      <label class="col-sm-4 form-control-label" align="left">นามสกุล: <span class="tx-danger">*</span></label>
-                      <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                        <input id="surname" type="text" class="form-control" placeholder="Enter lastname" disabled>
-                      </div>
+                  </div><!-- col-5 -->
+                  <div class="col-lg-5">
+                    <div class="form-group">
+                      <label class="form-control-label">นามสกุล: <span class="tx-danger">*</span></label>
+                      <input  id="surname" class="form-control" type="text" value="" placeholder="Enter lastname" readonly>
                     </div>
-                    <div class="row mg-t-20">
-                      <label class="col-sm-4 form-control-label" align="left">อายุ: <span class="tx-danger">*</span></label>
-                      <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                        <input id="age" type="text" class="form-control" placeholder="Enter your age" disabled>
-                      </div>
+                  </div><!-- col-5 -->
+                  
+                  <div class="col-lg-2">
+                    <div class="form-group mg-b-10-force">
+                      <label class="form-control-label">อายุ: <span class="tx-danger">*</span></label>
+                      <input id="age" class="form-control" type="text" value="" placeholder="กรอกอายุ" readonly>
                     </div>
-                    <div class="row mg-t-20">
-                      <label class="col-sm-4 form-control-label" align="left">สัญชาติ: <span class="tx-danger">*</span></label>
-                      <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                        <input id="religion" type="text" class="form-control" placeholder="Enter your religion" disabled>
-                      </div>
-                    </div>
-                    <div class="row mg-t-20">
-                      <label class="col-sm-4 form-control-label" align="left">วัน เดือน ปีเกิด: <span class="tx-danger">*</span></label>
-                      <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                  </div><!-- col-2 -->
+
+                  <div class="col-lg-2">
+                    <div class="form-group mg-b-10-force">
+                      <label class="form-control-label">วัน เดือน ปีเกิด: <span class="tx-danger">*</span></label>
                         <div class="input-group">
                           <span class="input-group-addon"><i class="icon ion-calendar tx-16 lh-0 op-6"></i></span>
-                          <input id="birth" type="text" class="form-control fc-datepicker" placeholder="วัน-เดือน-ปี" disabled>
+                          <input id="birth" type="text" class="form-control fc-datepicker" placeholder="วัน-เดือน-ปี" readonly>
                         </div>
-                      </div>
                     </div>
-                    <div class="row mg-t-20">
-                      <label class="col-sm-4 form-control-label" align="left">ภาระทางทหาร: <span class="tx-danger">*</span></label>
-                      <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                        <input id="sodier" type="text" class="form-control" placeholder="Enter your religion" disabled>
-                      </div>
+                  </div><!-- col-2 -->
+
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label">อีเมล์: <span class="tx-danger">*</span></label>
+                      <input id="email" class="form-control" type="email" value="" placeholder="กรอกอีเมล์" readonly>
                     </div>
-                    <div class="row mg-t-20">
+                  </div><!-- col-4 -->
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label">เบอร์โทรศัพท์: <span class="tx-danger">*</span></label>
+                      <input id="tel" class="form-control" type="email" value="" placeholder="กรอกเบอร์โทรศัพท์" readonly>
                     </div>
-                  </div><!-- form-layout -->
-                </div>
+                  </div><!-- col-4 -->
+                </div><!-- row -->
               </div>
 
-              <div id="profileUpdate" class="row bd-0 pd-25 pd-xs-40 mg-t-20" style="display: none;">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                  <div class="form-layout">
-                    <div class="row">
-                      <label class="col-sm-4 form-control-label" align="left">คำนำหน้าชื่อ: <span class="tx-danger">*</span></label>
-                      <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                        <select id="prefixUPD" class="form-control select2" data-placeholder="Choose Browser">
-                          <option value="นาย">นาย</option>
-                          <option value="นางสาว">นางสาว</option>
-                          <option value="นาง">นาง</option>
-                        </select>
+              <div id="profileUpdate" class="form-layout form-layout-1" style="display: none;">
+                <div class="row mg-b-25">
+                  <div class="col-lg-2">
+                    <div class="form-group mg-b-10-force">
+                      <label class="form-control-label">คำนำหน้าชื่อ: <span class="tx-danger">*</span></label>
+                      <select id="prefixUPD" class="form-control select2 select2-hidden-accessible" data-placeholder="เลือกคำนำหน้าชื่อ" tabindex="-1" aria-hidden="true">
+                        <option label="เลือกคำนำหน้าชื่อ"></option>
+                        <option value="นาย">นาย</option>
+                        <option value="นางสาว">นางสาว</option>
+                        <option value="นาง">นาง</option>
+                      </select>
                       </div>
-                    </div><!-- row -->
-                    <div class="row mg-t-20">
-                      <label class="col-sm-4 form-control-label" align="left">ชื่อ: <span class="tx-danger">*</span></label>
-                      <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                        <input id="nameUPD" type="text" class="form-control" placeholder="Enter firstname">
-                      </div>
+                  </div><!-- col-2 -->
+                  <div class="col-lg-5">
+                    <div class="form-group">
+                      <label class="form-control-label">ชื่อจริง: <span class="tx-danger">*</span></label>
+                      <input id="nameUPD" class="form-control" type="text" value="" placeholder="Enter firstname">
                     </div>
-                    <div class="row mg-t-20">
-                      <label class="col-sm-4 form-control-label" align="left">นามสกุล: <span class="tx-danger">*</span></label>
-                      <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                        <input id="surnameUPD" type="text" class="form-control" placeholder="Enter lastname">
-                      </div>
+                  </div><!-- col-5 -->
+                  <div class="col-lg-5">
+                    <div class="form-group">
+                      <label class="form-control-label">นามสกุล: <span class="tx-danger">*</span></label>
+                      <input  id="surnameUPD" class="form-control" type="text" value="" placeholder="Enter lastname">
                     </div>
-                    <div class="row mg-t-20">
-                      <label class="col-sm-4 form-control-label" align="left">อายุ: <span class="tx-danger">*</span></label>
-                      <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                        <input id="ageUPD" type="text" class="form-control" placeholder="Enter your age">
-                      </div>
+                  </div><!-- col-5 -->
+                  
+                  <div class="col-lg-2">
+                    <div class="form-group mg-b-10-force">
+                      <label class="form-control-label">อายุ: <span class="tx-danger">*</span></label>
+                      <input id="ageUPD" class="form-control" type="text" value="" placeholder="กรอกอายุ">
                     </div>
-                    <div class="row mg-t-20">
-                      <label class="col-sm-4 form-control-label" align="left">สัญชาติ: <span class="tx-danger">*</span></label>
-                      <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                        <input id="religionUPD" type="text" class="form-control" placeholder="Enter your religion">
-                      </div>
-                    </div>
-                    <div class="row mg-t-20">
-                      <label class="col-sm-4 form-control-label" align="left">วัน เดือน ปีเกิด: <span class="tx-danger">*</span></label>
-                      <div class="col-sm-8 mg-t-10 mg-sm-t-0">
+                  </div><!-- col-2 -->
+
+                  <div class="col-lg-2">
+                    <div class="form-group mg-b-10-force">
+                      <label class="form-control-label">วัน เดือน ปีเกิด: <span class="tx-danger">*</span></label>
                         <div class="input-group">
                           <span class="input-group-addon"><i class="icon ion-calendar tx-16 lh-0 op-6"></i></span>
                           <input id="birthUPD" type="text" class="form-control fc-datepicker" placeholder="วัน-เดือน-ปี">
                         </div>
-                      </div>
                     </div>
-                    <div class="row mg-t-20">
-                      <label class="col-sm-4 form-control-label" align="left">ภาระทางทหาร: <span class="tx-danger">*</span></label>
-                      <div class="col-sm-8 mg-t-10 mg-sm-t-0">
-                        <input id="sodierUPD" type="text" class="form-control" placeholder="Enter your religion">
-                      </div>
-                    </div>
-                    <div class="row mg-t-20">
-                    </div>
-                    <div class="form-layout-footer mg-t-30" align="center">
-                      <button id="updateProfile" class="btn btn-info" >บันทึกการเปลี่ยนแปลง</button>
-                      <button id="cancelUpdateProfile" class="btn btn-secondary">ยกเลิก</button>
+                  </div><!-- col-2 -->
 
-                    </div><!-- form-layout-footer -->
-                  </div><!-- form-layout -->
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label">อีเมล์: <span class="tx-danger">*</span></label>
+                      <input id="emailUPD" class="form-control" type="email" value="" placeholder="กรอกอีเมล์">
+                    </div>
+                  </div><!-- col-4 -->
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label">เบอร์โทรศัพท์: <span class="tx-danger">*</span></label>
+                      <input id="telUPD" class="form-control" type="email" value="" placeholder="กรอกเบอร์โทรศัพท์">
+                    </div>
+                  </div><!-- col-4 -->
+                </div><!-- row -->
+
+                <div class="form-layout-footer">
+                  <button id="updateProfile" class="btn btn-info" >บันทึกการเปลี่ยนแปลง</button>
+                  <button id="cancelUpdateProfile" class="btn btn-secondary">ยกเลิก</button>
+                </div><!-- form-layout-footer -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-10">
+                    <span class="card-text" style="color: #adb5bd"><h5>ข้อมูลติดต่อเพิ่มเติม</h5></span>
+                  </div>
+                  <div id="btnUpdateProfile" class="col-md-2" align="right" style="display: compact;">
+                    <a href="#" class="btn btn-primary btn-icon">
+                      <div><i class="fa fa-pencil"></i></div>
+                    </a>
+                  </div>
                 </div>
+              </div> 
+
+              <div id="addressPresent" class="form-layout form-layout-1" style="display: compact;">
+                <div class="row mg-b-25">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label class="form-control-label">ที่อยู่: <span class="tx-danger">*</span></label>
+                      <input id="address" class="form-control" type="text" value="" placeholder="กรอกที่อยู่">
+                    </div>
+                  </div><!-- col-12 -->
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label class="form-control-label">ตำบล: <span class="tx-danger">*</span></label>
+                      <input id="district" class="form-control" type="text" value="" placeholder="กรอกตำบล">
+                    </div>
+                  </div><!-- col-3 -->
+                  
+                  <div class="col-lg-3">
+                    <div class="form-group mg-b-10-force">
+                      <label class="form-control-label">อำเภอ / เขต: <span class="tx-danger">*</span></label>
+                      <input id="amphoe" class="form-control" type="text" value="" placeholder="กรอกอำเภอหรือเขต">
+                    </div>
+                  </div><!-- col-3 -->
+
+                  <div class="col-lg-3">
+                    <div class="form-group mg-b-10-force">
+                      <label class="form-control-label">จังหวัด: <span class="tx-danger">*</span></label>
+                      <input id="province" class="form-control" type="text" value="" placeholder="กรอกจังหวัด">
+                    </div>
+                  </div><!-- col-3 -->
+
+                  <div class="col-lg-3">
+                    <div class="form-group mg-b-10-force">
+                      <label class="form-control-label">รหัสไปรษณีย์: <span class="tx-danger">*</span></label>
+                      <input id="zipcode" class="form-control" type="text" value="" placeholder="กรอกรหัสไปรษณีย์">
+                    </div>
+                  </div><!-- col-3 -->
+                </div><!-- row -->
+              </div>
+
+              <div id="profileUpdate" class="form-layout form-layout-1" style="display: none;">
+                <div class="row mg-b-25">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label class="form-control-label">ที่อยู่: <span class="tx-danger">*</span></label>
+                      <input id="addressUPD" class="form-control" type="text" value="" placeholder="กรอกที่อยู่">
+                    </div>
+                  </div><!-- col-12 -->
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label class="form-control-label">ตำบล: <span class="tx-danger">*</span></label>
+                      <input id="districtUPD" class="form-control" type="text" value="" placeholder="กรอกตำบล">
+                    </div>
+                  </div><!-- col-3 -->
+                  
+                  <div class="col-lg-3">
+                    <div class="form-group mg-b-10-force">
+                      <label class="form-control-label">อำเภอ / เขต: <span class="tx-danger">*</span></label>
+                      <input id="amphoeUPD" class="form-control" type="text" value="" placeholder="กรอกอำเภอหรือเขต">
+                    </div>
+                  </div><!-- col-3 -->
+
+                  <div class="col-lg-3">
+                    <div class="form-group mg-b-10-force">
+                      <label class="form-control-label">จังหวัด: <span class="tx-danger">*</span></label>
+                      <input id="provinceUPD" class="form-control" type="text" value="" placeholder="กรอกจังหวัด">
+                    </div>
+                  </div><!-- col-3 -->
+
+                  <div class="col-lg-3">
+                    <div class="form-group mg-b-10-force">
+                      <label class="form-control-label">รหัสไปรษณีย์: <span class="tx-danger">*</span></label>
+                      <input id="zipcodeUPD" class="form-control" type="text" value="" placeholder="กรอกรหัสไปรษณีย์">
+                    </div>
+                  </div><!-- col-3 -->
+                </div><!-- row -->
+
+                <div class="form-layout-footer">
+                  <button id="updateAddress" class="btn btn-info" >บันทึกการเปลี่ยนแปลง</button>
+                  <button id="cancelUpdateAddress" class="btn btn-secondary">ยกเลิก</button>
+                </div><!-- form-layout-footer -->
               </div>
 
 
@@ -501,26 +602,6 @@
         </div>
 
 
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card bd-0 shadow-base pd-25 pd-xs-40 mg-t-20">
-              <div class="card-header bg-transparent pd-0 bd-b-0">
-                <h5 class="tx-14 tx-uppercase tx-spacing-1 tx-semibold tx-inverse">ข้อมูลติดต่อเพิ่มเติม</h5>
-                <p class="tx-14 mg-b-20 mg-xs-b-30">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum natus fuga reprehenderit unde odio. Inventore quia commodi quam repudiandae, culpa expedita ut, eligendi nulla maiores aperiam corrupti? Nostrum, ipsum.</p>
-              </div><!-- card-header -->
-              <div class="card-block pd-0">
-                <div class="pd-x-10 pd-t-10 pd-b-5">
-                  <input type="text" id="district">
-                  <input type="text" id="amphoe">
-                  <input type="text" id="province">
-                  <input type="text" id="zipcode">
-                </div><!-- bd -->
-                <a href="" class="btn btn-info tx-11 tx-spacing-1 tx-uppercase tx-medium tx-mont pd-y-12 pd-x-30 mg-t-30">Buttons</a>
-              </div><!-- card-block -->
-            </div>
-          </div>
-        </div>
         <div class="row">
           <div class="col-md-12">
             <div class="card bd-0 shadow-base pd-25 pd-xs-40 mg-t-20">
